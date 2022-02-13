@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Deface Page</title>
+  <title>PUREHACKERS</title>
+<link rel="SHORTCUT ICON" href="https://i68.tinypic.com/65si9x.jpg" type="image/x-icon"/>
+<link href='https://fonts.googleapis.com/css?family=Nosifer' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Iceland' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Sarpanch:700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=play" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+ <meta property="og:image" content="">
+  <style type="text/css">
+   
+   a{
+    text-decoration: none;
+   }
+   
+   h2{
+   font-family: Iceland, sans-serif;
+   Aaaaaze:40px;
+   color:#000;
+   margin: 0px;
+   text-shadow: 0 0 3px #fff;    }
+   p{
+   color:#fff;
+   font-size:25px;
+   margin: 0px;
+   text-shadow: 0 0 3px #ff0099;
+   }
+   .fot{
+   font-family: Iceland, sans-serif;
+   font-size:14px;
+   color:#fff;
+   margin: 0px;
+   text-shadow: 0 0 3px #000, 0px 0px 5px #000;
+   }
+    h1{
+   color:#000;
+   text-shadow: 0 0 5px #fff;
+  }
+  .greets{
+ font-family: Arial, sans-serif;
+ line-height: 24px;
+ font-size: 11px;
+ width: 50%;
+ background: #000;
+ opacity: 0.9;
+ text-transform: uppercase;
+ z-index: 9999;
+ border-radius:10px;
+ -moz-box-shadow: 1px 0px 2px #000;
+ -webkit-box-shadow: 1px 0px 2px #000;
+ box-shadow: 1px 0px 2px #000;
+}
+  </style>
+  <style type="text/css" >
+    .item.footer {
+    flex-wrap: wrap;
+    padding: 5rem;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.7;
+    grid-column: span 1;
+  }
+  @media screen and (min-width: 823px) and (max-width: 1223px) {
+    .item.footer {
+      grid-column: span 2;
+    }
+  }
+  .item.footer a {
+    text-decoration: none;
+    color: #fff;
+    padding: 3px 0;
+    border-bottom: 1px dashed;
+  }
+  .item.footer a:hover {
+    border-bottom: 1px solid;
+  }
+
+  footer {
+    margin-top: 1.5rem;
+  }
+  footer a {
+    text-decoration: none;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px dashed #fff;
+    color: #fff;
+    margin: 5px;
+  }
+  footer a:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  footer a .icons {
+    margin-top: 8px;
+    display: inline-block;
+    font-size: 20px;
+  }
+  footer a .icons:before {
+    position: relative;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  *:before, *:after {
+    content: "";
+    position: absolute;
+  }
+
+  .main-content {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+  .main-content .item {
+    display: grid;
+    grid-template-rows: 1fr min-content;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    flex-wrap: wrap;
+    background: var(--bg-color);
+  }
+  .main-content .item:not(.footer) {
+    padding-top: 1rem;
+  }
+
+  button {
+    background: transparent;
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 50px;
+    padding: 0.8rem 2rem;
+    font: 24px "Margarine", sans-serif;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s ease-in-out;
+    letter-spacing: 2px;
+  }
+
+  .name {
+    width: 100%;
+    text-align: center;
+    padding: 0 0 3rem;
+    font: 500 14px 'Rubik', sans-serif;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  }
+
+  .button__wrapper {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button-pulse button {
+    background: var(--bg-color);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  .button-pulse .button__wrapper:hover .pulsing:before {
+    animation: pulsing 0.2s linear infinite;
+  }
+  .button-pulse .button__wrapper:hover .pulsing:after {
+    animation: pulsing1 0.2s linear infinite;
+  }
+
+  .pulsing {
+    width: 99%;
+    height: 99%;
+    border-radius: 50px;
+    z-index: 1;
+    position: relative;
+  }
+  .pulsing:before, .pulsing:after {
+    width: 100%;
+    height: 100%;
+    border: inherit;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background: #fff;
+    border-radius: inherit;
+    animation: pulsing 2.5s linear infinite;
+  }
+  .pulsing:after {
+    animation: pulsing1 2.5s linear infinite;
+  }
+
+  @keyframes pulsing {
+    0% {
+      opacity: 1;
+      transform: scaleY(1) scaleX(1);
+    }
+    20% {
+      opacity: 0.5;
+    }
+    70% {
+      opacity: 0.2;
+      transform: scaleY(1.8) scaleX(1.4);
+    }
+    80% {
+      opacity: 0;
+      transform: scaleY(1.8) scaleX(1.4);
+    }
+    90% {
+      opacity: 0;
+      transform: scaleY(1) scaleX(1);
+    }
+  }
+  @keyframes pulsing1 {
+    0% {
+      opacity: 1;
+      transform: scaleY(1) scaleX(1);
+    }
+    20% {
+      opacity: 0.5;
+    }
+    70% {
+      opacity: 0.2;
+      transform: scaleY(1.3) scaleX(1.15);
+    }
+    80% {
+      opacity: 0;
+      transform: scaleY(1.3) scaleX(1.15);
+    }
+    90% {
+      opacity: 0;
+      transform: scaleY(1) scaleX(1);
+    }
+  }
+  .button-typewriter button {
+    width: 100%;
+    height: 100%;
+  }
+  .button-typewriter p {
+    animation: typing 4s steps(12) infinite;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .button-typewriter .button__wrapper:hover p {
+    animation: blink 0.3s infinite;
+  }
+
+  @keyframes typing {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 100%;
+    }
+    55%,
+   65%,
+   75% {
+      opacity: 1;
+    }
+    60%,
+   70% {
+      opacity: 0;
+    }
+    80% {
+      width: 100%;
+    }
+    100% {
+      width: 0;
+    }
+  }
+  .button-parrot .parrot {
+    position: absolute;
+    width: 60px;
+    text-align: center;
+    animation: blink 0.8s infinite;
+    color: transparent;
+  }
+  .button-parrot .parrot:before {
+    content: "Click Me!";
+  }
+  .button-parrot .parrot:nth-child(1) {
+    top: -30px;
+    left: -40px;
+    font: 12px/1 "Margarine", sans-serif;
+    transform: rotate(-20deg);
+    animation-duration: 0.5s;
+  }
+  .button-parrot .parrot:nth-child(2) {
+    font: 12px/1 "Margarine", sans-serif;
+    right: -40px;
+    top: -20px;
+    transform: rotate(15deg);
+    animation-duration: 0.3s;
+  }
+  .button-parrot .parrot:nth-child(3) {
+    font: 16px/1 "Margarine", sans-serif;
+    top: -60px;
+    left: 15px;
+    transform: rotate(10deg);
+    animation-duration: 1s;
+  }
+  .button-parrot .parrot:nth-child(4) {
+    font: 18px/1 "Margarine", sans-serif;
+    top: -70px;
+    left: 95px;
+    transform: rotate(2deg);
+    animation-duration: 0.7s;
+  }
+  .button-parrot .parrot:nth-child(5) {
+    font: 14px/1 "Margarine", sans-serif;
+    top: 80px;
+    left: 105px;
+    transform: rotate(-20deg);
+    animation-duration: 0.8s;
+  }
+  .button-parrot .parrot:nth-child(6) {
+    font: 12px/1 "Margarine", sans-serif;
+    top: 80px;
+    left: 5px;
+    transform: rotate(10deg);
+    animation-duration: 1.2s;
+  }
+  .button-parrot button:hover .parrot:before {
+    content: "Do it!";
+    width: 70px;
+  }
+
+  @keyframes blink {
+    25%,
+   75% {
+      color: transparent;
+    }
+    40%,
+   60% {
+      color: #fff;
+    }
+  }
+  </style>
+  <style>
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #000;
+}
+
+header {
+    background-color:rgba(33, 33, 33, 0.9);
+    color:#ffffff;
+    display:block;
+    font: 14px/1.3 Arial,sans-serif;
+    height:50px;
+    position:relative;
+    z-index:5;
+}
+h1{
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    font-family: Nosifer;
+    text-shadow: 0 0 0.5em red, 0 0 0.5em red;
+}
+
+.we-are {
+    color: red;
+    font-size: 20px;
+    text-shadow: #000 2px 2px 2px;
+    letter-spacing: 2px;
+}
+
+.message {
+    color: white;
+    -webkit-animation: fadeIn 1s ease-in;
+    animation: fadeIn 1s ease-in;
+}
+
+.cn {
+    color: white;
+    font-size: 14px;
+    text-shadow: #000 2px 2px 2px;
+    letter-spacing: 2px;
+    -webkit-animation: fadeIn 3s ease-in;
+    animation: fadeIn 1s ease-in;
+}
+
+-webkit-@keyframes we-are {
+    from {scale: 1.1;}
+    to {scale: 0;}
+}
+
+@keyframes we-are {
+    from {scale: 1.1;}
+    to {scale: 0;}
+}
+
+-webkit-@keyframes fadeIn {
+   0% {opacity: 0;}
+   100% {opacity: 1;}
+} 
+
+@keyframes fadeIn {
+   0% {opacity: 0;}
+   100% {opacity: 1;}
+} 
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+@keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-webkit-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-moz-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-ms-keyframes move-clouds-back {
+    from {background-position: 0;}
+    to {background-position:10000px 0;}
+}
+
+.stars, .twinkling, .clouds {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.stars {
+  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  z-index:0;
+}
+
+.twinkling{
+  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+  z-index:1;
+
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
+}
+
+.clouds{
+    background:transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;
+    background-repeat: no-repeat;
+    z-index:3;
+
+  -moz-animation:move-clouds-back 200s linear infinite;
+  -ms-animation:move-clouds-back 200s linear infinite;
+  -o-animation:move-clouds-back 200s linear infinite;
+  -webkit-animation:move-clouds-back 200s linear infinite;
+  animation:move-clouds-back 200s linear infinite;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.text {
+  font-weight: 100;
+  font-size: 28px;
+  color: #FAFAFA;
+  font-family: Iceland;
+  text-shadow: 0 0 0.5em cyan, 0 0 0.5em cyan;
+  
+}
+.dud {
+  color: #757575;
+}
+
+.animation-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.animation-container span {
+  color: whitesmoke;
+  display: block;
+  font-size: 18px;
+  font-family: 'Helvetica';
+  text-shadow: 0 0 1px white;
+  position: absolute;
+  user-select: none;
+  pointer-events: none;
+  cursor: default;
+  z-index: 1;
+  opacity: 0;
+  will-change: transform, opacity;
+  animation-timing-function: ease-out;
+  animation-name: move;
+}
+
+@keyframes move {
+  0% {
+    opacity: 0;
+    transform: translateY(100vh);
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: none;
+  }
+}
+.buzz_wrapper{
+  position:relative;
+  width:100%;
+  margin:180px auto;
+  background-attachment: fixed;
+        background-image: url(http://i.imgur.com/9QpJPlG.jpg);
+    background-position: 0 0; 
+        background-repeat: no-repeat ;  
+        background-size:cover;
+        overflow : hidden;
+  overflow:hidden;
+  padding:100px;
+}
+.scanline{
+  width:100%;
+  display:block;
+  background:#000;
+  height:4px;
+  position:relative;
+  z-index:3;
+  margin-bottom:5px;
+  opacity:0.1;
+}
+.buzz_wrapper span{
+  position:absolute;
+  -webkit-filter: blur(1px);
+  font-size:30px;
+  font-family:'Courier new', fixed;
+  font-weight:bold;
+}
+.buzz_wrapper span:nth-child(1){
+  color:red;
+  margin-left:-2px;
+  -webkit-filter: blur(2px);
+}
+.buzz_wrapper span:nth-child(2){
+  color:green;
+  margin-left:2px;
+  -webkit-filter: blur(2px);
+}
+.buzz_wrapper span:nth-child(3){
+  color:blue;
+  position:20px 0;
+  -webkit-filter: blur(1px);
+}
+.buzz_wrapper span:nth-child(4){
+  color:#fff;
+  -webkit-filter: blur(1px);
+  text-shadow:0 0 50px rgba(255,255,255,0.4);
+}
+.buzz_wrapper span:nth-child(5){
+  color:rgba(255,255,255,0.4);
+  -webkit-filter: blur(15px);
+}
+
+.buzz_wrapper span{
+  -webkit-animation: blur 30ms infinite, jerk 50ms infinite;
+}
+
+@-webkit-keyframes blur {
+  0%   { -webkit-filter: blur(1px); opacity:0.8;}
+  50% { -webkit-filter: blur(1px); opacity:1; }
+  100%{ -webkit-filter: blur(1px); opacity:0.8; }
+}
+@-webkit-keyframes jerk {
+  50% { left:1px; }
+  51% { left:0; }
+}
+@-webkit-keyframes jerkup {
+  50% { top:1px; }
+  51% { top:0; }
+}
+
+.buzz_wrapper span:nth-child(3){
+  -webkit-animation: jerkblue 1s infinite;
+}
+@-webkit-keyframes jerkblue {
+  0% { left:0; }
+  30% { left:0; }
+  31% { left:10px; }
+  32% { left:0; }
+  98% { left:0; }
+  100% { left:10px; }
+}
+.buzz_wrapper span:nth-child(2){
+  -webkit-animation: jerkgreen 1s infinite;
+}
+@-webkit-keyframes jerkgreen {
+  0% { left:0; }
+  30% { left:0; }
+  31% { left:-10px; }
+  32% { left:0; }
+  98% { left:0; }
+  100% { left:-10px; }
+}
+
+.buzz_wrapper .text{
+  -webkit-animation: jerkwhole 5s infinite;
+  position:relative;
+}
+@-webkit-keyframes jerkwhole {
+  30% {  }
+  40% { opacity:1; top:0; left:0;  -webkit-transform:scale(1,1);  -webkit-transform:skew(0,0);}
+  41% { opacity:0.8; top:0px; left:-100px; -webkit-transform:scale(1,1.2);  -webkit-transform:skew(50deg,0);}
+  42% { opacity:0.8; top:0px; left:100px; -webkit-transform:scale(1,1.2);  -webkit-transform:skew(-80deg,0);}
+  43% { opacity:1; top:0; left:0; -webkit-transform:scale(1,1);  -webkit-transform:skew(0,0);}
+  65% { }
+}
+</style>
+</head>
+
+<body>
+
+  <div style="position: fixed; top: 75px; left: -225px; width: 600px; padding: 10px; font-size: 24px; text-align: center; color: white; font-family: 'trebuchet ms', verdana, arial, sans-serif;transform: rotate(-45deg);transform-origin: 50% 0px;-o-transform: rotate(-45deg); -o-transform-origin: 50% 0px;-moz-transform: rotate(-45deg); -moz-transform-origin: 50% 0px; -webkit-transform: rotate(-45deg); -webkit-transform-origin: 50% 0px; background-color: Transparent; border: 1px solid rgb(170, 170, 170); z-index: 9999; opacity: 0.5;"><a href="https://github.com/p3mu14-ui" style="text-decoration:none;color:white;">p3mu14-ui</a></div>
+<div class="stars">
+  <center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>P3mu14 - Rest api</h1>
+  </center>
+</div>
+<div class="twinkling">
+  <center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+    <div class="text"></div>
+    </div>
+       <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<div class="item button-parrot" style="--bg-color: #3498db;">
+       <a href="/docs" target="_blank"><button>Open Docs
+        <div class="parrot"></div>
+        <div class="parrot"></div>
+        <div class="parrot"></div>
+        <div class="parrot"></div>
+        <div class="parrot"></div>
+        <div class="parrot"></div>
+                 </button></a>
+      
+    </div>
+  </center>
+</div>
+<div class="clouds">
+</div>
+
+  
+<script type="text/javascript">
+class TextScramble {
+  constructor(el) {
+    this.el = el
+    this.chars = '!@#$%^&*()_-=+{}:"|<>?,./;'
+    this.update = this.update.bind(this)
+  }
+  setText(newText) {
+    const oldText = this.el.innerText
+    const length = Math.max(oldText.length, newText.length)
+    const promise = new Promise((resolve) => this.resolve = resolve)
+    this.queue = []
+    for (let i = 0; i < length; i++) {
+      const from = oldText[i] || ''
+      const to = newText[i] || ''
+      const start = Math.floor(Math.random() * 40)
+      const end = start + Math.floor(Math.random() * 40)
+      this.queue.push({ from, to, start, end })
+    }
+    cancelAnimationFrame(this.frameRequest)
+    this.frame = 0
+    this.update()
+    return promise
+  }
+  update() {
+    let output = ''
+    let complete = 0
+    for (let i = 0, n = this.queue.length; i < n; i++) {
+      let { from, to, start, end, char } = this.queue[i]
+      if (this.frame >= end) {
+        complete++
+        output += to
+      } else if (this.frame >= start) {
+        if (!char || Math.random() < 0.28) {
+          char = this.randomChar()
+          this.queue[i].char = char
+        }
+        output += `<span class="dud">${char}</span>`
+      } else {
+        output += from
+      }
+    }
+    this.el.innerHTML = output
+    if (complete === this.queue.length) {
+      this.resolve()
+    } else {
+      this.frameRequest = requestAnimationFrame(this.update)
+      this.frame++
+    }
+  }
+  randomChar() {
+    return this.chars[Math.floor(Math.random() * this.chars.length)]
+  }
+}
+
+const phrases = [
+  'Yes, I am a criminal.',
+  'My crime is that of curiosity.',
+  'My crime is that of judging people by what they say and think, not what they look like.',
+  'My crime is that of outsmarting you, something that you will never forgive me for.',
+  'I am a hacker, and this is my manifesto.',
+  'You may stop this individual, but you cant stop us all...',
+  'after all, were all alike.'
+]
+
+const el = document.querySelector('.text')
+const fx = new TextScramble(el)
+
+let counter = 0
+const next = () => {
+  fx.setText(phrases[counter]).then(() => {
+    setTimeout(next, 1500)
+  })
+  counter = (counter + 1) % phrases.length
+}
+
+next()
+
+'use strict';
+
+var app = {
+
+  chars: ['php','javascript','python','html','css','Localhost','bash','HACED!','Security','System'],
+
+  init: function () {
+    app.container = document.createElement('div');
+    app.container.className = 'animation-container';
+    document.body.appendChild(app.container);
+    window.setInterval(app.add, 100);
+  },
+
+  add: function () {
+    var element = document.createElement('span');
+    app.container.appendChild(element);
+    app.animate(element);
+  },
+
+  animate: function (element) {
+    var character = app.chars[Math.floor(Math.random() * app.chars.length)];
+    var duration = Math.floor(Math.random() * 15) + 1;
+    var offset = Math.floor(Math.random() * (50 - duration * 2)) + 3;
+    var size = 10 + (15 - duration);
+    element.style.cssText = 'right:'+offset+'vw; font-size:'+size+'px;animation-duration:'+duration+'s';
+    element.innerHTML = character;
+    window.setTimeout(app.remove, duration * 1000, element);
+  },
+
+  remove: function (element) {
+    element.parentNode.removeChild(element);
+  },
+
+};
+
+document.addEventListener('DOMContentLoaded', app.init);
+</script>
+ 
+ 
+
+ <link href='http://fonts.googleapis.com/css?family=Iceland:400,700' rel='stylesheet' type='text/css'>
+ <link href='http://fonts.googleapis.com/css?family=Iceland:400,700' rel='stylesheet' type='text/css'>
+
+ <div id="I301_html">
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript">setTimeout("$('#loading').fadeOut(5000);", 10000);  </script>
+<style type="text/css">#loading{position:fixed;top:0;left:0;padding-top:0px;background-color:#000;width:100%;height:100%;color:black;z-index:9000;overflow:hidden;}</style> <div id="loading">
+<body onload="document.f.p.focus()" topmargin="0" leftmargin="0" bgcolor="#000000" marginheight="0" marginwidth="0">
+<table border="0" cellpadding="2" cellspacing="0" width="100%">
+<tbody><tr>
+</tr> <tr>
+</tr>
+</tbody></table> <font id="ResponseData" color="#ff99cc">
+<pre><script type="text/javascript">
+TypingText = function(element, interval, cursor, finishedCallback) {
+  if((typeof document.getElementById == "undefined") || (typeof element.innerHTML == "undefined")) {
+    this.running = true; // Never run.
+    return;
+  }
+  this.element = element;
+  this.finishedCallback = (finishedCallback ? finishedCallback : function() { return; });
+  this.interval = (typeof interval == "undefined" ? 100 : interval);
+  this.origText = this.element.innerHTML;
+  this.unparsedOrigText = this.origText;
+  this.cursor = (cursor ? cursor : "");
+  this.currentText = "";
+  this.currentChar =0;
+  this.element.typingText = this;
+  if(this.element.id == "") this.element.id = "typingtext" + TypingText.currentIndex++;
+  TypingText.all.push(this);
+  this.running = false;
+  this.inTag = false;
+  this.tagBuffer = "";
+  this.inHTMLEntity = false;
+  this.HTMLEntityBuffer = "";
+}
+TypingText.all = new Array();
+TypingText.currentIndex = 0;
+TypingText.runAll = function() {
+  for(var i = 0; i < TypingText.all.length; i++) TypingText.all[i].run();
+}
+TypingText.prototype.run = function() {
+  if(this.running) return;
+  if(typeof this.origText == "undefined") {
+    setTimeout("document.getElementById('" + this.element.id + "').typingText.run()", this.interval); // We haven't finished loading yet.  Have patience.
+    return;
+  }
+  if(this.currentText == "") this.element.innerHTML = "";
+//  this.origText = this.origText.replace(/<([^<])*>/, "");     // Strip HTML from text.
+  if(this.currentChar < this.origText.length) {
+    if(this.origText.charAt(this.currentChar) == "<" && !this.inTag) {
+      this.tagBuffer = "<";
+      this.inTag = true;
+      this.currentChar++;
+      this.run();
+      return;
+    } else if(this.origText.charAt(this.currentChar) == ">" && this.inTag) {
+      this.tagBuffer += ">";
+      this.inTag = false;
+      this.currentText += this.tagBuffer;
+      this.currentChar++;
+      this.run();
+      return;
+    } else if(this.inTag) {
+      this.tagBuffer += this.origText.charAt(this.currentChar);
+      this.currentChar++;
+      this.run();
+      return;
+    } else if(this.origText.charAt(this.currentChar) == "&" && !this.inHTMLEntity) {
+      this.HTMLEntityBuffer = "&";
+      this.inHTMLEntity = true;
+      this.currentChar++;
+      this.run();
+      return;
+    } else if(this.origText.charAt(this.currentChar) == ";" && this.inHTMLEntity) {
+      this.HTMLEntityBuffer += ";";
+      this.inHTMLEntity = false;
+      this.currentText += this.HTMLEntityBuffer;
+      this.currentChar++;
+      this.run();
+      return;
+    } else if(this.inHTMLEntity) {
+      this.HTMLEntityBuffer += this.origText.charAt(this.currentChar);
+      this.currentChar++;
+      this.run();
+      return;
+    } else {
+      this.currentText += this.origText.charAt(this.currentChar);
+    }
+    this.element.innerHTML = this.currentText;
+    this.element.innerHTML += (this.currentChar < this.origText.length - 1 ? (typeof this.cursor == "function" ? this.cursor(this.currentText) : this.cursor) : "");
+    this.currentChar++;
+    setTimeout("document.getElementById('" + this.element.id + "').typingText.run()", this.interval);
+  } else {
+ this.currentText = "";
+ this.currentChar = 0;
+        this.running = false;
+        this.finishedCallback();
+  }
+}
+</script>
+<script>
+function disableselect(e){return false}
+function reEnable(){return true}
+//if IE4+
+document.onselectstart=new Function ("return false")
+//if NS6
+if (window.sidebar){
+document.onmousedown=disableselect
+document.onclick=reEnable
+}
+</script>
+<script>
+var message="Aaaaa";
+function clickIE()
+{if (document.all)
+{(message);return false;}}
+function clickNS(e) {
+if
+(document.layers||(document.getElementById&&!document.all))
+{
+if (e.which==2||e.which==3) {(message);return false;}}}
+if (document.layers)
+{document.captureEvents(Event.MOUSEDOWN);document. onmousedown=clickNS;}
+else
+{document.onmouseup=clickNS;document.oncontextmenu  =clickIE;}
+document.oncontextmenu=new Function("return false")
+</script>
+<table style=" background-repeat: no-repeat;"  align="right" border="0" width="100%" >
+<br>
+<tbody><tr>
+<td  valign="top"><p id="hack" >
+<br>
+<br>
+<font style="color:#ffffff;text-shadow:#FF0099 0px 0px 10px"> &nbsp;&nbsp;&nbsp;&nbsp;<b>[+] <font style="color:red;text-shadow:#000 0px 0px 3px">script deface By </font><font style="color:white;text-shadow:#000 0px 0px 3px">_MR.SH4DOW</font>        </font> <br><br>
+<font style="color:#ffffff;text-shadow:#FF0099 0px 0px 10px"> &nbsp;&nbsp;&nbsp;&nbsp;<b>[+] I am tired of all this :(         </font> <br>
+<font style="color:#ffffff;text-shadow:#FF0099 0px 0px 10px"> &nbsp;&nbsp;&nbsp;&nbsp;<b>[+] I'm Tired With Your Attitude That Never Change :(     </font><br>
+<font style="color:#ffffff;text-shadow:#FF0099 0px 0px 10px"> &nbsp;&nbsp;&nbsp;&nbsp;<b>[+] I hope you understand with my feelings :(       </font><br>
+      <font color="White"> </p></tr>
+</tbody></table>              </div> <br>
+<script type="text/javascript">
+    new TypingText(document.getElementById("hack"), 50, function(i) { var ar = new Array("_",""); return " " + ar[i.length % ar.length]; });
+    TypingText.runAll();
+    </script>
+    <style>       td       {         background-color: #000000;         font-family: Courier New;         font-size:20px;         color:#000000;         border-color: #000000;         border-width:1pt;         border-style:solid;         border-collapse:collapse;         padding:0pt 3pt;         vertical-align:top;       }       table       {         border-color: #88aace;         border-width:0pt 1pt;         border-style:dash;       }       A:Link, A:Visited       {         color: #88aace;       }       A.no:Link, A.no:Visited       {         color: #88aace;         text-decoration: none;       }       A:Hover, A:Visited:Hover , A.no:Hover, A.no:Visited:Hover       {         color: #88aace;         background-color:#2e2e2e;         text-decoration:         overline underline;       }       .style1       {         color: #88aace       }       .style2       {         color: 1f1f1f       }       body       {         color:white;         background-position:right;         background-attachment:fixed;         </div>       }     </style> </div>
+</div>
+<body oncontextmenu="return false" onkeydown="return false">
+<center><BR><BR><BR><br><br><br><br>
+<h2 class="glow"><font style="color:green;text-shadow:#000 0px 0px 3px"></font><font style="color:red;text-shadow:#000 0px 0px 3px">YOUR HEART</font><font style="color:white;text-shadow:#000 0px 0px 3px"> DEFACED BY</font>
+<font style="color:green;text-shadow:#000 0px 0px 3px"></font></h2>
+<h2 class="glow2" ><font style="color:yellow;text-shadow:#12 0px 0px 32px">.::Mr.SH4D0W::.</font><br> <span style="color:orange;font-family:Iceland;text-shadow:white 0px 0px 10px">^_^</span><span style="color:#ffffff;font-family:Iceland;text-shadow:#FF0099 0px 0px 10px">Mr.SH4D0W</span><span style="color:orange;font-family:Iceland;text-shadow:white 0px 0px 10px">^_^</span> </b></h2>
+<p><b><font style="color:green;text-shadow:#000 0px 0px 3px">Sorry, I Was On Your Heart.</font><span style="font-family:Iceland;color:red;text-shadow:#000 0px 0px 3px"></span>
+   <font style="color:green;text-shadow:#000 0px 0px 3px">PLEASE </font><font style="color:red;text-shadow:#000 0px 0px 3px">CHECK AND PATCH</font>
+   <font style="color:green;text-shadow:#000 0px 0px 3px"> YOUR HEART !</font><br><font style="color:yellow;text-shadow:#000 0px 0px 3px">#*#*#*#</font>
+      </p>
+  </span>
+   <div style="font-size:10px;color:gold;text-shadow:grey 0px 0px 3px">
+  <span style="font-family:Iceland;font-weight:bold;color:#ffffff"><p><font style="color:blue;text-shadow:#000 0px 0px 3px">~I AM IS JUST AN ILLUSION~</font></p></span>
+ </div> <div class="greets">
+<table align=center border="0">
+<tr>
+<td width=100% id=greetz>
+<marquee behavior="scroll" direction="right" scrollamount="25" scrolldelay="25" width="100%">
+<font size="5px" style="font-family: Iceland, sans-serif;color:white;text-shadow: 0 0 3px red, 0px 0px 5px red" >
+<b>-=all Defacer Indonesia=-</font>
+</marquee>
+</td>
+</table></div> </center>
+</body>
